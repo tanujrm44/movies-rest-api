@@ -1,0 +1,28 @@
+{
+  "name": "my-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server",
+    "data:import": "node ./data/import-dev-data.js --import",
+    "data:destroy": "node ./data/import-dev-data.js --destroy",
+    "debug": "ndb server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
